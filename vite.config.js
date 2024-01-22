@@ -1,6 +1,5 @@
 // vite.config.js
 export default {
-    base: '/<REPO>/',
+    base: '/weather-app',
     // ... autres configurations ...
   };
-  
