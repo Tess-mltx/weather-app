@@ -7,7 +7,6 @@ let myChart; // <=== déclarer le graph pour vérifier son existance
 let allDatasets = []; // stocker datasets de chaque city
 
 export function chartCompare(newSearch) {
-    console.log('data pour chartCompare : ', newSearch);
     let days = [];
     let arrayChart = {
         city: newSearch.city,
@@ -21,6 +20,11 @@ export function chartCompare(newSearch) {
         days.push(day);
     });
 
+    newDataSets(arrayChart);
+    createChart(days);
+}
+
+function newDataSets(arrayChart) {
     let newDatasets = {
         label: arrayChart.city,
         data: arrayChart.temp,
@@ -30,7 +34,9 @@ export function chartCompare(newSearch) {
     };
 
     allDatasets.push(newDatasets); // <=== pour ajouter les lignes a chaque appel
+}
 
+function createChart(days) {
     if (myChart) {
         myChart.destroy(); // <=== corrige erreur graph exist
     }
@@ -41,8 +47,5 @@ export function chartCompare(newSearch) {
             labels: days,
             datasets: allDatasets,
         },
-        options: {
-            // Vos options de graphique ici
-        }
     });
 }
