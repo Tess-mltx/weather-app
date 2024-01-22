@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="darkMode">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Weather App</title>
+    <link rel="stylesheet" href="scss/main.css" />
+    <script type="module" defer src="js/main.js"></script>
+    <!-- Appel de charJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Appel de fontawesome -->
+    <script src="https://kit.fontawesome.com/f0baf4ae6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+    <header class="headerPage">
+        <div class="headerPage-navContainer">
+            <a href="#" class="headerPage-logoAccueil"><img class="headerPage-logoAccueil-img" src="img/becode-logo.png" alt="logo du cofeeShop"></a>
+            <input type="checkbox" class="headerPage-navContainer-darkModeInput" id="toggleDarkMode">
+            <label for="toggleDarkMode" class="headerPage-navContainer-darkModeLabel">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="headerPage-navContainer-darkModeLabel-ball"></span>
+            </label>
+        </div>
+        <section class="headerPage-sectionHeader">
+            <hgroup class="headerPage-sectionHeader-text">
+                <h1 class="headerPage-sectionHeader-text-title">The Weather App</h1>
+                <p class="headerPage-sectionHeader-text-slogan">With random light color, to add fun in your life !</p>
+            </hgroup>
+            <div class="headerPage-sectionHeader-divHeader">
+                <input list="suggestCity" name="city" type="text" id="city" placeholder="city">
+                <datalist id="suggestCity">
+                    <!-- option via js -->
+                </datalist>
+                <button id="btnSubmitCity" type="button">+</button>
+            </div>
+        </section>
+    </header>
+    <main class="mainPage">
+        <div class="mainPage-sectionForecast">
+            <!-- cards via js -->
+        </div>
+        <div class="mainPage-sectionCompareSearch">
+            <canvas id="CompareSearch">
+                            <!-- chart js -->
+            </canvas>
+        </div>
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

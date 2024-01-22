@@ -1,0 +1,25 @@
+// Header Styles
+.headerPage {
+    &-navContainer {
+        @include flex-center;
+    }
+
+    &-sectionHeader {
+        &-text {
+            text-align: center;
+        }
+
+        &-divHeader {
+            text-align: center;
+        }
+    }
+
+}
+
+// .logo {
+//     // Styles for the logo
+// }
+
+// .navigation {
+//     // Styles for navigation elements
+// }

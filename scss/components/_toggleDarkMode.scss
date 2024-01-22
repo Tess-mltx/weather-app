@@ -1,0 +1,37 @@
+// Toggle dark mode
+.headerPage-navContainer-darkModeInput {
+    opacity: 0;
+    position: absolute;
+    
+    &:checked + .headerPage-navContainer-darkModeLabel .headerPage-navContainer-darkModeLabel-ball {
+        transform: translateX(30px);   
+    }
+}
+
+.headerPage-navContainer-darkModeLabel {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .fa-moon, & .fa-sun {
+        color: #f1c40f;
+    }
+
+    & .headerPage-navContainer-darkModeLabel-ball {
+        background-color: #fff;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        border-radius: 50%;
+        transition: transform 0.4s ease-in-out;
+    }
+}

@@ -1,0 +1,19 @@
+datalist {
+    // position: absolute;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    width: 350px;
+    padding: 5px;
+    max-height: 10rem;
+    overflow-y: auto;
+  }
+  
+  option {
+    padding: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  // option:hover {
+  //   // background-color: lightblue;
+  // }

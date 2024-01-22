@@ -1,0 +1,76 @@
+
+.mainPage-sectionForecast {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &-forecastCard {
+        // @include up;
+        margin: auto;
+        margin-top: 5%;
+        padding: 0;
+        width: 250px;
+        border-radius: 3px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &-overlay {
+            padding: 15px 30px;
+            height: 100%;
+
+                &-city {
+
+                    font-weight: 300;
+                    line-height: .2em;
+                }
+
+                &-infosToday {
+                    @include flex-center;
+
+                    &-description {
+
+                        font-weight: 400;
+                        font-size: 1em;
+                    }
+
+                    &-todayDetails-windFeel {
+                        margin-left: 24px;
+
+                        font-weight: 300;
+
+                        .dot {
+                            margin-left: 0;
+                            font-size: .9em;
+                        }
+                    }
+                }
+
+                &-todayTemp {
+                    @include flex-center;
+
+                    img {
+                        width: 55px;
+                        height: 55px;
+                    }
+
+                    &-temp {
+                        font-size: 1.5em;
+                    }
+                }
+
+                &-forecastDays {
+                    @include flex-center;
+                    width: 100%;
+                }
+
+                &-day {
+                    @include flex-center;
+                    flex-direction: column;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }

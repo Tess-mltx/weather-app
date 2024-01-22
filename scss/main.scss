@@ -1,0 +1,12 @@
+//Fichier scss qui va importer tous les autres
+// Attention à l'ordre des imports
+@import './vendors/reset';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/base.scss';
+@import './components/toggleDarkMode';
+@import './components/header';
+@import './components/dataList';
+@import './components/cards';
+@import './components/fullSectionGraph';
+

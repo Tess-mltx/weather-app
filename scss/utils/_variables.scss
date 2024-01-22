@@ -1,0 +1,37 @@
+// Breakpoints
+$break-desktop: 900px;
+
+
+//Fonts
+$font-size-xsmall: 12px;
+$font-size-small: 14px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+
+$font-text: 'Crimson Text', serif;
+$font-main: 'Josefin Sans', sans-serif;
+$font-name: 'Playfair Display', serif;
+
+//Colors
+$overlay-light:  hsla(0, 0%, 100%, 0.6);
+$on-background-light: hsl(237, 78%, 7%);
+$background-light: hsl(238, 40%, 90%);
+$shadow-color-light: hsla(0, 0%, 0%, 0.2);
+
+$shadow-color-dark: hsla(0, 0%, 100%, 0.2);
+$overlay-dark:  hsla(0, 0%, 0%, 0.6);
+$on-background-dark: hsl(237, 40%, 90%);
+$background-dark: hsl(238, 78%, 7%);
+
+
+//Spacings
+$space-s: 1rem;
+$space-m: 1.5rem;
+
+$grid-gap:0.8rem;
+
+$padding-s : 0.5rem 2.5rem;
+
+//Effect
+
+$small-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
